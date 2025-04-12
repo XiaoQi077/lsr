@@ -3,26 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <title>刘少介绍</title>
+    <style>
+        :root {
+            --primary-color: #ff69b4;
+            --secondary-color: #ffe6f2;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: var(--secondary-color);
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .profile {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            border-radius: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            margin: 5px 0;
+            background: var(--secondary-color);
+            border-radius: 8px;
+        }
+
+        .message-section {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid var(--primary-color);
+            border-radius: 8px;
+            resize: vertical;
+            margin: 10px 0;
+        }
+
+        button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>刘少介绍</h1>
+        <h1 style="color: var(--primary-color); margin:0;">刘少介绍</h1>
     </header>
-    
+
     <main>
         <section>
-            <h2>刘少，原名刘少睿</h2>
             <div class="profile">
-                <img src="lsr.jpg" alt="刘少生活照" width="300">
-                <p>安徽滁州人，滁州市应用技术学校高一学生</p>
+                <img src="data/lsr.jpg" alt="刘少生活照" width="300">
+                <div>
+                    <h2>刘少睿</h2>
+                    <p>安徽滁州人 | 滁州市应用技术学校高一学生</p>
+                </div>
             </div>
-            
+
             <article>
                 <h3>个人特点</h3>
                 <ul>
-                    <li>喜欢画吊</li>
-                    <li>玩电报（纸飞机）</li>
-                    <li>肾虚</li>
+                    <li>🎨 喜欢画吊</li>
+                    <li>✈️ 玩电报（纸飞机）</li>
+                    <li>💤 养生达人</li>
                 </ul>
             </article>
         </section>
@@ -31,5 +124,6 @@
     <footer>
         <p>© 2023-2025 刘少睿</p>
     </footer>
+    </script>
 </body>
 </html>
